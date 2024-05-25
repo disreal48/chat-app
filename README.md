@@ -6,7 +6,6 @@ This is a chat application built with React Native and Expo.
 
 To install the project, run the following command:
 
-```sh
 npm install
 
 To start the project, you can use one of the following commands:
@@ -29,4 +28,7 @@ expo for the Expo SDK.
 expo-status-bar for a status bar compatible with Expo.
 react and react-native for building the user interface.
 react-native-screens and react-native-safe-area-context for handling safe areas on iOS and managing screen transitions.
+
+```
+
 ```
