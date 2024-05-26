@@ -106,7 +106,6 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#757083",
     alignSelf: "center",
-    opacity: "100%",
     marginTop: "10%",
     width: "88%",
     height: "20%",
