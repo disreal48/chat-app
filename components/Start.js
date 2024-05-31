@@ -3,17 +3,35 @@ import {
   StyleSheet,
   View,
   Text,
-  Button,
   TextInput,
   ImageBackground,
   TouchableOpacity,
+  Alert,
 } from "react-native";
+import { getAuth, signInAnonymously } from "firebase/auth";
 
 const backgroundImage = require("../assets/background.png");
 
 const Start = ({ navigation }) => {
   const [name, setName] = useState("");
   const [bgColor, setBgColor] = useState("#090C08");
+
+  const auth = getAuth();
+
+  const signInUser = () => {
+    signInAnonymously(auth)
+      .then((result) => {
+        navigation.navigate("Chat", {
+          userID: result.user.uid,
+          name: name,
+          bgColor: bgColor,
+        });
+        Alert.alert("Signed in Successfully!");
+      })
+      .catch((error) => {
+        Alert.alert("Unable to sign in, try later again.");
+      });
+  };
 
   return (
     <View style={styles.container}>
@@ -52,9 +70,13 @@ const Start = ({ navigation }) => {
           <View>
             <TouchableOpacity
               style={styles.startChatButton}
-              onPress={() =>
-                navigation.navigate("Chat", { name: name, bgColor: bgColor })
-              }
+              onPress={() => {
+                if (name == "") {
+                  Alert.alert("You need a username");
+                } else {
+                  signInUser();
+                }
+              }}
             >
               <Text style={styles.starChatText}>Start Chatting</Text>
             </TouchableOpacity>
