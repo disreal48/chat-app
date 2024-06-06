@@ -4,12 +4,13 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { REACT_APP_FIREBASE_API_KEY } from "@env";
 
 const Stack = createNativeStackNavigator();
 
 const App = () => {
   const firebaseConfig = {
-    apiKey: `${process.env.REACT_APP_FIREBASE_API_KEY}`,
+    apiKey: `${REACT_APP_FIREBASE_API_KEY}`,
     authDomain: "chat-40665.firebaseapp.com",
     projectId: "chat-40665",
     storageBucket: "chat-40665.appspot.com",
