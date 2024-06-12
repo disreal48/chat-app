@@ -36,14 +36,6 @@ This is a chat application built with React Native and Firebase.
 - Node.js and npm installed on your machine
 - Expo CLI installed globally (`npm install -g expo-cli`)
 
-## Firebase
-
-- Create an account and add a new project
-- Get your API-Key and insert it in your .env-File
-- Set up your database
-- Activate your storage
-- under "rules": change to "allow read, write: if true"
-
 ## Installation
 
 1. Clone this repository: `git clone https://github.com/disreal48/chat-app.git`
