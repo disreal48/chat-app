@@ -1,34 +1,62 @@
 # Chat App
 
-This is a chat application built with React Native and Expo.
+This is a chat application built with React Native and Firebase.
 
-## Installation
+## Key Features
 
-To install the project, run the following command:
+- Real-time chat functionality
+- Offline support
+- Firebase Firestore database integration
 
-- npm install
+## Technologies Used
 
-To start the project, you can use one of the following commands:
-
-- npm run start
-- npm run android
-- npm run ios
-- npm run web
-
-## Components
-
-- Chat.js: This component displays the chat interface. It takes a name and bgColor from the route parameters and sets the title of the navigation to the name. It also sets the background color of the chat interface to bgColor.
-
-- Start.js: This component is the starting point of the application. It contains a form for the user to enter their name and choose a background color for the chat interface.
+- React Native
+- Firebase
+- Expo
 
 ## Dependencies
 
-- @react-navigation/native and @react-navigation/native-stack for navigation.
-- expo for the Expo SDK.
-- expo-status-bar for a status bar compatible with Expo.
-- react and react-native for building the user interface.
-- react-native-screens and react-native-safe-area-context for handling safe areas on iOS and managing screen transitions.
+- @react-navigation/native: ^6.1.17
+- @react-navigation/native-stack: ^6.9.26
+- expo: ~51.0.8
+- expo-status-bar: ~1.12.1
+- firebase: ^10.3.1
+- react: 18.2.0
+- react-native: 0.74.1
+- react-native-dotenv: ^3.4.11
+- react-native-gifted-chat: ^2.4.0
+- react-native-safe-area-context: 4.10.1
+- react-native-screens: 3.31.1
+- @react-native-community/netinfo: 11.3.1
+- @react-native-async-storage/async-storage: 1.23.1
+- expo-image-picker: ~15.0.5
 
-```
+## Prerequisites
 
-```
+- Node.js and npm installed on your machine
+- Expo CLI installed globally (`npm install -g expo-cli`)
+
+## Firebase
+
+- Create an account and add a new project
+- Get your API-Key and insert it in your .env-File
+- Set up your database
+- Activate your storage
+- under "rules": change to "allow read, write: if true"
+
+## Installation
+
+1. Clone this repository: `git clone https://github.com/disreal48/chat-app.git`
+2. Get a Firebase Account
+3. Get your API-Key and insert it in your .env-File
+4. Set up your firebase database
+5. Activate your storage
+6. under "rules": change to `allow read, write: if true `
+7. Navigate into the project directory: `cd chat-app`
+8. Install the dependencies: `npm install`
+9. start the project with `npx expo start `
+10. For Testing you can use your device, Android Studio or Xcode
+
+## License
+
+This project is licensed under the MIT License.
