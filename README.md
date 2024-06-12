@@ -43,10 +43,10 @@ This is a chat application built with React Native and Firebase.
 3. Get your API-Key and insert it in your .env-File
 4. Set up your firebase database
 5. Activate your storage
-6. under "rules": change to `allow read, write: if true `
+6. Under "rules": change to `allow read, write: if true `
 7. Navigate into the project directory: `cd chat-app`
 8. Install the dependencies: `npm install`
-9. start the project with `npx expo start `
+9. Start the project with `npx expo start `
 10. For Testing you can use your device, Android Studio or Xcode
 
 ## License
